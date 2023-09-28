@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Bootstrap Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/ef55d7b33c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="general-container container-fluid d-flex flex-column min-vh-100">
+    <!-- Nav Bar -->
+    <div class="row d-flex align-items-center justify-content-between bg-pumpkin">
+      <!-- Menu Button -->
+      <div class="col-auto d-flex align-items-center">
+        <div class="clickable"><i class="fa-solid fa-bars fa-2xl fa-fw"></i></div>
+      </div>
+      <!-- Logo -->
+      <div class="col-auto col-xl-2 d-xl-flex justify-content-center">
+        <a href="#"><img height=50 src="email2.png"></a>
+      </div>
+      <!-- Settings/User -->
+      <div class="col-auto align-items-center justify-content-center d-flex my-3">
+        <div><i class="clickable fa-solid fa-gear fa-xl fa-fw me-2"></i></div>
+        <div><i class="clickable fa-regular fa-circle-user fa-2xl fa-fw me-2"></i></div>
+      </div>
+    </div>
+    <!-- End Nav Bar -->
+    <!-- Columns -->
+    <div class="row h-100 flex-grow-1">
+      <!-- Column 1 -->
+      <div class="d-none d-md-none d-xl-flex flex-column justify-content-between col-lg-12 col-xl-2 bg-pumpkin">
+        <div class="row">
+          <div class="container mt-4 d-flex flex-column">
+            <div class="d-flex justify-content-center">
+            <!-- Desktop Compose -->
+              <button class="compose-button btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"><i class="fa-solid fa-pen-to-square fa-lg fa-fw"></i></button>              
+              <div class="offcanvas offcanvas-bottom" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <p>Try scrolling the rest of the page to see this option in action.</p>
+                </div>
+              </div>
+            </div>            
+            <!-- Folders -->
+            <div class="list-group mt-3">
+              <a href="#" class="is-selected text-white list-group-item"><i class="fa-solid fa-inbox fa-fw me-2"></i></i>Inbox</a>
+              <a href="#" class="text-white list-group-item mt-1"><i class="fa-solid fa-star fa-fw me-2"></i>Favorites</a>
+              <a href="#" class="text-white list-group-item mt-1"><i class="fa-solid fa-envelope-circle-check fa-fw me-2"></i>Sent</a>
+              <a href="#" class="text-white list-group-item mt-1"><i class="fa-solid fa-box-archive fa-fw me-2"></i>Archive</a>
+              <a href="#" class="text-white list-group-item mt-1"><i class="fa-solid fa-circle-exclamation fa-fw me-2"></i>Spam</a>
+              <a href="#" class="text-white list-group-item mt-1"><i class="fa-solid fa-trash fa-fw me-2"></i>Trash</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Column 2 -->
+      <div class="d-flex col-sm-12 col-md-5 col-lg-5 col-xl-4 bg-pumpkin3 px-2">
+        <div class="mt-1 mb-1 d-flex flex-column justify-content-start p-4 bg-pumpkin flex-fill rounded">
+          <!-- Nav Bar -->
+          <div class="row d-flex align-items-center justify-content-between mb-3 p-3 bg-pumpkin2 rounded">
+            <!-- Compose -->
+            <div class="col-auto order-md-1 order-lg-1 d-md-flex d-xl-none">
+              <button type="button" class="btn btn-light">
+                <i class="fa-solid fa-pen-to-square fa-lg fa-fw"></i>
+              </button>
+            </div>
+            <!-- Search Bar -->
+            <div class="col-auto col-md-12 col-lg-6 order-md-3 order-lg-2 flex-fill mt-md-3 mt-lg-0">
+              <form role="search">
+                <input type="search" class="form-control" placeholder="Search mail">
+              </form>
+            </div>
+            <!-- Sort Dropdown -->
+            <div class="col-auto order-md-2 order-lg-3 d-flex align-items-center justify-content-start">
+              <div class="dropdown">
+                <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown"></button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Newest First</a></li>
+                  <li><a class="dropdown-item" href="#">Oldest First</a></li>
+                  <li><a class="dropdown-item" href="#">Custom</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- End Nav Bar -->
+          <!-- Mail -->
+          <div class="d-flex flex-column align-items-center">
+            <div class="noclick mail-item d-flex justify-content-center align-items-center row bg-pumpkin2 is-selected ">
+              <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-7 mt-3">
+                  <h6>John Doe</h6>
+                </div>
+                <div class="col-auto text-end d-none d-md-block">
+                  <p>Aug 5</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-auto">
+                  <p>In regards to your application</p>
+                </div>
+              </div>
+            </div>
+            <div class="row mail-item mt-1 d-flex justify-content-center align-items-center  bg-pumpkin2">
+              <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-7 mt-3">
+                  <h6 class="fw-bold">Apple</h6>
+                </div>
+                <div class="col-auto text-end d-none d-md-block ">
+                  <p class="fw-bold">Jul 14</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-auto">
+                  <p>Latest news on our biggest sales of the year</p>
+                </div>
+              </div>
+            </div>
+            <div class="mail-item mt-1 d-flex justify-content-center align-items-center row bg-pumpkin2">
+              <div class="row d-flex justify-content-between align-items-center">
+                <div class="col-7 mt-3">
+                  <h6 class="fw-bold">Kohl's</h6>
+                </div>
+                <div class="col-auto text-end d-none d-md-block ">
+                  <p class="fw-bold">Jul 4</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-auto">
+                  <p>The back to school sales start now!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Mail -->
+        </div>
+      </div>
+      <!-- Column 3 -->
+      <div class="d-md-block d-none col-md-7 col-lg-7 col-xl-6 bg-pumpkin3 p-4">
+        <div class="d-flex flex-column bg-pumpkin3 rounded m-0 p-md-4 h-100 flex-grow-1 bg-pumpkin">
+          <div class="row bg-pumpkin2 p-2 border">
+            <div class="col-9">
+              <p><b>From:</b> John Doe</p>
+              <p><b>To:</b> me</p>
+              <p><b>Subject:</b> In regards to your application</p>
+            </div>
+            <div class="col-3 text-end fw-bold">
+              <p>8/05/2023</p>
+              <p>1:49pm</p>
+            </div>
+          </div>
+          <div class="email-content row flex-grow-1 text-white p-2">
+            <p>
+              <br>Dear XXXX,<br><br>
+              We'd like to congratulate you on being accepted into the program.<br><br>
+            </p>
+            <div>
+              <form class="d-flex flex-column align-items-center">
+                <textarea class="border p-2" placeholder="Type response here"></textarea>
+                <button type="button" class="btn btn-light rounded-pill m-3 p-3"><i class="fa-regular fa-paper-plane me-2"></i>Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

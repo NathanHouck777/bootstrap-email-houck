@@ -1,0 +1,73 @@
+body {
+    color: white !important;
+}
+
+
+.compose-button {
+    width: 100%;
+}
+
+/* Column 1 */
+.list-group-item {
+    background-color: rgb(22, 66, 88) !important;
+    border: none !important;
+}
+.list-group-item:hover {
+    background: #206091a4 !important;
+}
+
+/* Column 2 */
+.mail-item {
+    width: 100%;
+}
+.mail-item:hover:not(.noclick) {
+    filter: brightness(125%);
+    transform: scale(101%);
+}
+.mail-item:hover {
+    cursor: pointer;
+}
+
+
+
+.bg-pumpkin {
+    background-color: rgb(22, 66, 88);
+}
+.bg-pumpkin2 {
+    background-color: #206091a4;
+}
+.bg-pumpkin3 {
+    background-color: #18527a8c;
+}
+
+
+@media (min-width: 768px) {
+    .is-selected {
+        background: #0091ffa4 !important;
+        border: 1px solid white !important;
+    }
+}
+
+
+textarea {
+    width: 100%;
+    height: 300px;
+    outline: none;
+    background-color: #206091a4;
+    color: white;
+}
+textarea:focus::placeholder {
+    color: transparent;
+}
+textarea::placeholder {
+    color: white;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.offcanvas {
+    width: 952px !important;
+    height: 500px !important;
+}
