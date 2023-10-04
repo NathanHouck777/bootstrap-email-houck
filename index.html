@@ -39,14 +39,25 @@
             <button class="compose-button btn btn-light" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
                     class="fa-solid fa-pen-to-square fa-lg fa-fw"></i></button>
-            <div class="offcanvas offcanvas-bottom" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            <div class="offcanvas offcanvas-bottom bg-pumpkin2" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
                 id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <h5 class="offcanvas-title text-white" id="offcanvasScrollingLabel">New Message</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
-                    <p>Try scrolling the rest of the page to see this option in action.</p>
+                <div class="offcanvas-body bg-pumpkin2">
+                    <form class="d-flex flex-column">
+                      <div class="compose-inputs">
+                        <input type="text" class="border w-100 p-2" placeholder="Recipients">
+                      </div>
+                      <div class="compose-inputs">
+                        <input type="text" class="border w-100 p-2" placeholder="Subject">
+                      </div>
+                      <div>
+                        <textarea class="compose-text border p-2"></textarea>
+                      </div>
+                      <button type="button" class="btn btn-light rounded-pill m-3 p-3"><i class="fa-regular fa-paper-plane me-2"></i>Send</button>
+                    </form>
                 </div>
             </div>
             <!-- Folders -->
